@@ -1,0 +1,38 @@
+/* custom.css — non-destructive optional styles
+   Add this file by linking it after your main stylesheet to apply enhancements
+   without changing existing files.
+*/
+
+:root{
+  --primary: #5AA;
+  --muted: #6b6b6b;
+  --card-bg: #ffffff;
+}
+
+/* General tweaks */
+body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
+
+/* Navbar enhancements (only active if linked) */
+header.navbar{
+  background: linear-gradient(180deg,#2b2b2b,#1f1f1f);
+  color:#fff;
+}
+.logo{font-weight:700}
+nav a{color:#fff}
+
+/* Hero */
+.hero{padding:3rem 1rem;text-align:center}
+.hero h1{font-size:2rem;margin-bottom:0.5rem}
+.hero p{color:var(--muted)}
+.hero button{background:var(--primary);color:#fff;border:0;padding:0.55rem 0.9rem;border-radius:8px;cursor:pointer}
+
+/* Sections and cards */
+.section{max-width:980px;margin:2rem auto;padding:0 1rem}
+.project .card{background:var(--card-bg);padding:1rem;border-radius:8px;box-shadow:0 8px 24px rgba(16,24,40,0.06)}
+
+/* Small responsive helper */
+@media (max-width:640px){
+  .hero h1{font-size:1.5rem}
+}
+
+/* End of custom.css */
